@@ -1,0 +1,7 @@
+letsencrypt:
+  image: gnue/letsencrypt
+  volumes:
+    - "./data/etc/letsencrypt:/etc/letsencrypt"
+    - "./data/var/lib/letsencrypt:/var/lib/letsencrypt"
+    - "./data/log/lib/letsencrypt:/var/log/letsencrypt"
+    - "./webroot:/var/www/html"
